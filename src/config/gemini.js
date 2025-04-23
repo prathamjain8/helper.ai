@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 
 const ai = new GoogleGenAI({
-  apiKey: "AIzaSyCpoTf1H72rbd61cOTjofH_Uz_QA3AS3lU",
+  apiKey: process.env.API_KEY,
 });
 
 async function main(prompt) {
